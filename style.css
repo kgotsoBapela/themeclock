@@ -10,15 +10,14 @@
 html{
     transition: all 0.5s ease-in;
 }
-html.dark{
+html.dark {
     --primary-color: #fff;
     --secondary-color: #333;
 }
-html.dark{
-    --primary-color: #111;
-    color: var(--primary-color)
+html.dark {
+    background-color: #111;
+    color: var(--primary-color);
 }
-
 body{
     font-family: 'Heebo', sans-serif;
     display: flex;
@@ -51,7 +50,6 @@ body{
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: yellow;
 }
 .needle{
     background-color: var(--primary-color);
@@ -61,6 +59,7 @@ body{
     height: 65px;
     width: 3px;
     transform-origin: bottom center;
+    transition: all 0.6s ease-in;
 }
 .needle.hour{
     transform: translate(-50%, -100%) rotate(0deg);
@@ -73,6 +72,7 @@ body{
     transform: translate(-50%, -100%) rotate(0deg);
     height: 100px;
     background-color: #e74c3c;
+    width: 2px;
 }
 .center-point{
     background-color: #e74c3c;
